@@ -6,5 +6,5 @@ def drive_lookup():
 
 
 def start_ripping(arglist):
-    arglist.insert('cyanrip', 0)
+    arglist.insert(0, 'cyanrip')
     return subprocess.Popen(arglist, stdout=subprocess.PIPE)
